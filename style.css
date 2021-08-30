@@ -4,16 +4,28 @@
 body{
     display: flex;
     justify-content: center;
+    padding: 2rem;
     
 }
-.container{
+.container {
+    background-color: rgba(150, 193, 211, 0.521);
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.9rem 0rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* .container{
     display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     padding: 5rem;
-}
+} */
 
 .return{
     text-align: center;
@@ -33,4 +45,34 @@ table td{
 }
 .table-view{
     display: none;
+}
+
+.amt{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-weight: bolder
+}
+
+.error-msg{
+    font-weight: bolder;
+    margin: 1rem;
+    text-align: left;
+}
+
+.container button {
+    margin-top: 1.3rem;
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 0.5rem 0.5rem;
+    
+}
+
+.container input {
+    padding: 1.1rem;
+    height: 0rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0rem;
+    border-radius: 10px;
 }
