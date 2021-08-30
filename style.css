@@ -76,3 +76,9 @@ table td{
     margin-bottom: 0rem;
     border-radius: 10px;
 }
+
+table{
+    padding: 1.5rem;
+    justify-content: center;
+    display: flex;
+}
