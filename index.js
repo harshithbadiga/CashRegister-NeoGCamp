@@ -30,10 +30,7 @@ resetBtn.addEventListener("click", function reload(){
 check.addEventListener("click", function buttonClicked() {
     hideMessage()
     tableView.style.display = "block"
-
-
-
-        if (cashGiven.value >= billAmount.value) {
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
             const changeToBeReturned = cashGiven.value - billAmount.value
             change(changeToBeReturned);
         } else {
