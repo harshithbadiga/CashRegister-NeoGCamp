@@ -32,17 +32,17 @@ check.addEventListener("click", function buttonClicked() {
     tableView.style.display = "block"
 
 
-    // if (billAmount.value > 0) {
+
         if (cashGiven.value >= billAmount.value) {
             const changeToBeReturned = cashGiven.value - billAmount.value
             change(changeToBeReturned);
         } else {
             invalid("Do you want to wash dishes!")
+            tableView.style.display = "none"
 
         }
 
-    // } else {
-        // invalid("The amount is invalid!")
+
     }
 )
 
