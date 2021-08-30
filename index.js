@@ -12,7 +12,7 @@ check.addEventListener("click", function buttonClicked() {
 
 
     if (billAmount.value > 0) {
-        if (cashGiven.value > billAmount.value) {
+        if (cashGiven.value >= billAmount.value) {
             const changeToBeReturned = cashGiven.value - billAmount.value
             change(changeToBeReturned);
         } else {
@@ -21,7 +21,7 @@ check.addEventListener("click", function buttonClicked() {
         }
 
     } else {
-        invalid("The amount is negative!")
+        invalid("The amount is invalid!")
     }
 })
 
