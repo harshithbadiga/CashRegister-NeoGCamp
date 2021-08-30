@@ -1,14 +1,17 @@
 *{
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+    
+}
 .container{
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 50%;
     justify-content: center;
     text-align: left;
-
     padding: 5rem;
 }
 
